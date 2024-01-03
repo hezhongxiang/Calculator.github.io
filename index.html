@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./OIP-removebg-preview.png">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="box">
+            <div id="title">Calculator</div> <br>
+            <input id="calculate-area" type="text">
+            <div id="operator">
+                <div id="item1">
+                    <button onclick="aptdisplay ('7')">7</button>
+                    <button onclick="aptdisplay ('8')">8</button>
+                    <button onclick="aptdisplay ('9')">9</button>
+                    <button onclick="deleteOneDigit()" id="del">DEL</button>
+                </div>
+                <div id="item2">
+                    <button onclick="aptdisplay ('4')">4</button>
+                    <button onclick="aptdisplay ('5')">5</button>
+                    <button onclick="aptdisplay ('6')">6</button>
+                    <button onclick="aptdisplay ('+')">+</button>
+                </div>
+                <div id="item3">
+                    <button onclick="aptdisplay ('1')">1</button>
+                    <button onclick="aptdisplay ('2')">2</button>
+                    <button onclick="aptdisplay ('3')">3</button>
+                    <button onclick="aptdisplay ('-')">-</button>
+                </div>
+                <div id="item4">
+                    <button onclick="aptdisplay ('.')">.</button>
+                    <button onclick="aptdisplay ('0')">0</button>
+                    <button onclick="aptdisplay ('/')">/</button>
+                    <button onclick="aptdisplay ('*')">x</button>
+                </div>
+                <div id="item5">
+                    <button onclick="reset()" id="reset">RESET</button>
+                    <button onclick="calculate()" id="equal">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
